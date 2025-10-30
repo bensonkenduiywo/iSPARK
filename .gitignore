@@ -18,7 +18,7 @@ __pycache__/
 # Raster data (if not needed in repo)
 *.tif
 *.tiff
-
+*.xlsx
 # Virtual environments
 .venv/
 env/
@@ -30,3 +30,4 @@ venv.bak/
 # Output folders
 results/
 tests/
+shapefiles/
