@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Path to your multiband GeoTIFF
-tif_path = "/cluster01/Projects/USA_IDA_AICCRA/1.Data/RAW/ispark/MODIS_NDVI_2000_2025_tiles/tile_0000.tif"
+tif_path = "/cluster01/Projects/USA_IDA_AICCRA/1.Data/RAW/ispark/CHIRPS_precip_2000_2025_tiles/tile_0000.tif"
 
 # Open the GeoTIFF
 with rasterio.open(tif_path) as src:  # loads in bands, rows, cols
