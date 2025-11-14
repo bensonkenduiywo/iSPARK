@@ -10,12 +10,12 @@ start_year = 2000
 end_year = 2025
 TILE_SIZE_PIXELS = 128  # Fixed tile size
 RESOLUTION = 1000  # Meters per pixel
-filename = f'FLDAS_sm_{start_year}_{end_year}'
+filename = f'MODIS_LST_{start_year}_{end_year}'
 gee_projectpath = "projects/cropmapping-365811"
 gee_projectid = "cropmapping-365811"
 asset_folder = "rwanda"
 image_asset_id = f"{gee_projectpath}/assets/{asset_folder}/{filename}"
-root = '/cluster01/Projects/USA_IDA_AICCRA/1.Data/RAW/ispark/' #'/cluster01/Projects/USA_IDA_AICCRA/1.Data/FINAL/Galileo/data/'
+root = 'D:/OneDrive - CGIAR/Initiatives_Projects/iSPARK/Data/images/' #'/cluster01/Projects/USA_IDA_AICCRA/1.Data/FINAL/Galileo/data/'
 NODATA_VALUE = -9999
 # -------------------- EE AUTH --------------------
 import os

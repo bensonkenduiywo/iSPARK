@@ -6,23 +6,24 @@ library(terra)
 # ==============================
 # 1. Read multiband GeoTIFF
 # ==============================
+root <- 'D:/OneDrive - CGIAR/Initiatives_Projects/iSPARK/Data/images/'
 #Soil moisture
-sm_path <- "/cluster01/Projects/USA_IDA_AICCRA/1.Data/RAW/ispark/FLDAS_sm_2000_2025_tiles/tile_0000.tif"
+sm_path <- paste0(root, "FLDAS_sm_2000_2025_tiles/tile_0000.tif")
 sm <- rast(sm_path)
 cat("Loaded", nlyr(sm), "bands for FEWSNET Soil moisture\n")
 names(sm)
 #Precipitation
-chrp_path <- "/cluster01/Projects/USA_IDA_AICCRA/1.Data/RAW/ispark/CHIRPS_precip_2000_2025_tiles/tile_0000.tif"
+chrp_path <- paste0(root,"CHIRPS_precip_2000_2025_tiles/tile_0000.tif")
 chrp <- rast(chrp_path)
 cat("Loaded", nlyr(chrp), "bands CHIRPS precip\n")
 names(chrp)
 #MODIS NDVI
-ndvi_path <- "/cluster01/Projects/USA_IDA_AICCRA/1.Data/RAW/ispark/MODIS_NDVI_2000_2025_tiles/tile_0000.tif"
+ndvi_path <- paste0(root,"MODIS_NDVI_2000_2025_tiles/tile_0000.tif")
 ndvi <- rast(ndvi_path)
 cat("Loaded", nlyr(ndvi), "bands for MODIS LST\n")
 names(ndvi)
 #MODIS LST
-lst_path <- "/cluster01/Projects/USA_IDA_AICCRA/1.Data/RAW/ispark/MODIS_LST_2000_2025_tiles/tile_0000.tif"
+lst_path <- paste0(root,"MODIS_LST_2000_2025_tiles/tile_0000.tif")
 lst <- rast(lst_path)
 cat("Loaded", nlyr(lst), "bands for MODIS LST\n")
 names(lst)
