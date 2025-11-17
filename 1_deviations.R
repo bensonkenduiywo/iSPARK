@@ -266,6 +266,3 @@ writeRaster(vci, paste0(outputs,'vci.tif'), overwrite = TRUE)
 writeRaster(pci, paste0(outputs,'pci.tif'), overwrite = TRUE)
 writeRaster(tci, paste0(outputs,'tci.tif'), overwrite = TRUE)
 writeRaster(sci, paste0(outputs,'sci.tif'), overwrite = TRUE)
-
-
-
